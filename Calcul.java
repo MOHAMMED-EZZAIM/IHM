@@ -21,7 +21,6 @@ public class Calcul {
 	String str;
 	public Calcul() {
 
-		
 		b0=new JButton("0");
 		b1=new JButton("1");
 		b2=new JButton("2");
@@ -45,20 +44,8 @@ public class Calcul {
 		tabButton[9]=b9;
 		for(int i=0;i<tabButton.length;i++) {
 			tabButton[i].setFont(new Font("",Font.ITALIC,20));
-			//tabButton[i].setBorder(BorderFactory.createLineBorder(Color.CYAN));
 		}
 		
-//		b0.addActionListener(new ecote());
-//		b1.addActionListener(new ecote());
-//		b2.addActionListener(new ecote());
-//		b3.addActionListener(new ecote());
-//		b4.addActionListener(new ecote());
-//		b5.addActionListener(new ecote());
-//		b6.addActionListener(new ecote());
-//		b7.addActionListener(new ecote());
-//		b8.addActionListener(new ecote());
-//		b9.addActionListener(new ecote());
-
 		for(int i=0;i<tabButton.length;i++) {
 			tabButton[i].addActionListener(new ecote());
 		}
@@ -82,12 +69,6 @@ public class Calcul {
 			//Operation[i].setBorder(BorderFactory.createLineBorder(Color.CYAN));
 		}
 		
-//		ne9ta.addActionListener(new ecote());
-//		plus.addActionListener(new ecote());
-//		Darb.addActionListener(new ecote());
-//		moin.addActionListener(new ecote());
-//		egal.addActionListener(new ecote());
-//		kisma.addActionListener(new ecote());
 		
 		for(int i=0;i<Operation.length;i++) {
 			Operation[i].addActionListener(new ecote());
@@ -344,15 +325,10 @@ public class Calcul {
 				Double res=Math.sqrt(nbr);
 				text.setText(String.valueOf(res));
 			}
-			
-			
 		}
 		
 	}
-    
 	public static void main(String[] args) {
-		CustomTitleBarExample o=new CustomTitleBarExample();
-		o.methode();
 		new Calcul();
 	}
 }
