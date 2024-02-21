@@ -114,6 +114,7 @@ class  west extends  JPanel {
         JCheckBox Tchekbo[]=new JCheckBox[9];
         Tchekbo[0]=new JCheckBox(t[0],true);
         Tchekbo[0].setFont(font);
+        Tchekbo[0].setForeground(Color.red);
         add(Tchekbo[0]);
      for(int i=1;i<taill;i++){
          Tchekbo[i]=new JCheckBox(t[i]);
