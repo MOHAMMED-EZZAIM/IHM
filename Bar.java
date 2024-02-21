@@ -3,7 +3,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-public class CustomTitleBarExample {
+public class Bar{
     private static Point mouseDownCompCoords;
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
